@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+$primary-color: rgba(180, 0, 114, 0.7);
+$secondary-color: rgba(229, 148, 0, 0.9);
+$overlay-color: rgba(24, 39, 52, 0.85);
+
+@import "menu";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+#showcase {
+  background: $primary-color;
+  height: 100vh;
+  position: relative;
+  color: white;
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+  }
+  .btn {
+    display: inline-block;
+    background: black;
+    text-decoration: none;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    transition: opacity 1s ease-in-out;
+  }
+  .btn:hover {
+    opacity: 0.2;
+  }
+}
+
+#showcase::before {
+  content: "";
+  background: url("../img/background.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}

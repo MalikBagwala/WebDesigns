@@ -1,0 +1,23 @@
+body{
+	background: linear-gradient(to left, #A1FFCE , #FAFFD1);
+}
+
+.parallax-window{
+	min-height: 800px;
+	background: transparent;
+}
+
+.containerA{
+	width: auto;
+	height: 400px;
+	background: linear-gradient(to left, #A1FFCE , #FAFFD1);
+	background-attachment: fixed;
+	padding-bottom: 50px;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+	font-size: 70px;
+	text-align: center;
+	padding-top:700px;
+}
